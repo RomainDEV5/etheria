@@ -1,0 +1,325 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+/* Bouton icon resposive */ 
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.account-btn, .connexion-btn {
+    float: right;
+    margin: 0;
+}
+
+/*---------------*/
+
+/* ... (les styles précédents) */
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0px;
+    text-align: center; /* Aligne le texte au centre dans le header */
+}
+
+/* Styles pour la navigation responsive */
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+}
+/* Style de la navigation principale */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style de la liste des liens */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Style des liens de la barre de navigation */
+nav a {
+    text-decoration: none;
+    color: #fff; /* Couleur du texte non survolé */
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out;
+    text-align:center; 
+}
+
+/* Style des liens au survol */
+nav a:hover {
+    color: #ffd700; /* Couleur jaune au survol */
+}
+
+.connexion-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 15px; /* Ajustez la taille du padding pour réduire la taille du bouton */
+    font-size: 12px; /* Ajustez la taille de la police pour réduire la taille du bouton */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin: 0;
+}
+
+
+.connexion-btn:hover {
+    background-color: #45a049;
+}
+
+
+/* style pour creature mythique et quete */ 
+
+.features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.feature {
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+.feature img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+
+/*-------------------------------*/
+
+#accueil {
+    background-image: url('image/Minecraft-Castle-Ideas-2-1024x576.png'); /* Remplacez 'background.jpg' par votre image de fond magique */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px;
+
+}
+
+
+
+#accueil h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffd700; /* Jaune or pour un effet magique */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+#accueil p {
+    font-size: 18px;
+    margin-top: 30px;
+    color: #fff;
+}
+
+/* Section event*/ 
+
+
+.event {
+    width: 45%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    margin-top: 70px;
+
+}
+
+.event:hover {
+    transform: scale(1.05);
+}
+
+.event img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.event h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffd700; /* Couleur dorée pour le titre */
+}
+
+.event p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ccc;
+    margin-top: 10px; /* Ajuster la marge vers le bas */
+}
+
+
+
+
+/* Effet de coin décoratif */
+.event::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #4CAF50; /* Couleur verte pour le coin */
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+/*-----*/
+
+
+/* partie news items */ 
+
+
+.news {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.news h2 {
+    font-size: 24px;
+    color: #ffd700;
+}
+
+.news-item {
+    margin-top: 30px;
+}
+
+.news-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.gallery {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.gallery h2 {
+    font-size: 24px;
+    color: #ffd700;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+/*-------------------------*/
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+}
+
+/* Bouton Compte */ 
+
+.account-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 20px; /* Ajustez selon vos besoins */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.account-btn:hover {
+    background-color: #45a049;
+}
+
+/* section staff */ 
+
+
+.staff-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.staff-member {
+    text-align: center;
+    margin: 20px;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+    width: 200px; /* Largeur fixe pour chaque membre du personnel */
+}
+
+.staff-member:hover {
+    transform: scale(1.05);
+}
+
+.staff-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.staff-member h2 {
+    margin: 10px 0;
+}
+
+.staff-member p {
+    margin: 0;
+    color: #fff;
+}
+
+/* Réorganiser les membres du personnel pour une disposition en pyramide sur les petits écrans */
+@media screen and (max-width: 768px) {
+    .staff-member:nth-child(1),
+    .staff-member:nth-child(2) {
+        order: -1; /* Mettre les deux premiers en haut */
+    }
+    .staff-member:nth-child(3),
+    .staff-member:nth-child(4) {
+        order: 1; /* Mettre les deux suivants en bas */
+    }
+}
